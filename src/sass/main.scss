@@ -1,0 +1,23 @@
+@font-face {
+    font-family: heading;
+    src: url(../fonts/Impact.woff);
+}
+
+@import "variables"; 
+@import "base";
+@import "typography"; 
+@import "header";   
+@import "welcome";
+@import "services";  
+@import "cta";  
+@import "shop";  
+@import "projects";  
+@import "why-us";  
+@import "testimonials";  
+@import "blog";  
+@import "footer";
+@import "about";
+@import "page-services";
+@import "page-projects";
+@import "page-contact";
+@import "signup";

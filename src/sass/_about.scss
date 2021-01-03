@@ -1,0 +1,166 @@
+.header{
+
+    .about{
+        background: url(../img/about-header-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        color: #fff;
+        padding-bottom: 27rem;
+        padding-top: 15rem;
+
+        .p__text{
+            line-height: 1.4;
+        }
+    }
+}
+
+// ===========================================
+// welcome section ===============================
+
+.welcome.about-us{
+    position: relative;
+    background: #fff;
+    margin-top: -12rem;
+    z-index: -1;
+
+    .about-us-img{
+        padding-right: 5rem;
+
+        img{
+            max-width: 410px;
+            width: 100%;
+        }
+    }
+}
+
+
+// ==========================================
+// team section ==============================
+
+.team{
+    padding-bottom: 8rem;
+
+
+
+    &__box{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        background: #eeeeee;
+        &-img{
+            // max-height: 33rem;
+            img{
+                width: 100%;
+                // height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-content{
+            padding: 0 3rem 2.5rem 3rem;
+
+            .name-box{
+                background: $color-primary;
+                color: #fff;
+                padding: 8px 20px;
+                position: relative;
+                z-index: 1;
+                transform: translateY(-50%);
+                h4{
+                    font-size: 2.5rem;
+                    color: #fff;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    span{
+                        display: block;
+                        font-size: 1.5rem;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .details{
+                margin-top: -5px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            .social__links{
+                background: #fff;
+                padding: 5px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                margin: 0 auto;
+                a{
+                    &:link,
+                    &:visited{
+                        display: flex;
+                        align-items: center;
+
+                        padding: 5px 10px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $color-text;
+                        text-transform: uppercase;
+
+                        i{
+                            font-size: 20px;
+                            color: $color-primary;
+                            line-height: 0;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    &.email{
+                        border-right: 1px solid #c9c9c9;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .owl-carousel .owl-nav{
+        display: none;
+
+    }
+
+    .owl-carousel .owl-dots {
+        // margin-top: 5rem;
+        display: block;
+      }
+
+      .owl-carousel .owl-dots .owl-dot,
+      .owl-carousel .owl-nav [class*="owl-"]:focus {
+        outline: none;
+      }
+      
+      .owl-carousel .owl-dots .owl-dot span {
+        width: 1.5rem;
+        height: 1.5rem;
+      background: #b3b3b3;
+      // border: 3px solid transparent;
+      transition: all 0.2s ease;
+      display: inline-block;
+      margin: 1rem;
+    }
+    
+    .owl-carousel .owl-dots .owl-dot:hover span,
+    .owl-carousel .owl-dots .owl-dot.active span {
+      background: $color-primary;
+      border: 3px solid #fff;
+      // outline: 1px solid #fff;
+      // outline-offset: 2px;
+      box-shadow: 0 0 0 2px $color-primary;
+    }
+}
+
+
+

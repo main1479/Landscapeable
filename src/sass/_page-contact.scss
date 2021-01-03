@@ -1,0 +1,242 @@
+.contact-hero{
+    background: url(../img/contact-header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    padding-bottom: 27rem;
+    padding-top: 15rem;
+
+    .p__text{
+        line-height: 1.4;
+    }
+}
+
+
+.embed-responsive{
+    position: relative;
+    z-index: 1;
+    max-height: 70vh;
+    min-height: 400px;
+
+}
+
+
+.contact__form{
+    padding-bottom: 8rem;
+
+    .d-flex{
+        align-items: flex-start;
+    }
+    .info__item{
+        padding: 2.5rem;
+        border-bottom: 1px solid #dcf2dd;
+        display: flex;
+
+        &.location__box{
+            padding-top: 0;
+        }
+
+        &-icon{
+            width: 8rem;
+            height: 8rem;
+            background: $color-primary;
+            color: #fff;
+            flex: 0 0 8rem;
+            margin-right: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i{
+                font-size: 4rem;
+            }
+        }
+
+        &-info{
+
+            h4.heading{
+                font-size: 2.6rem;
+            }
+
+            p.p__text{
+                font-size: 1.8rem;
+                line-height: 1.2;
+                font-style: italic;
+                font-family: $monts;
+            }
+
+            p.p__text.small{
+                font-size: 12px;
+            }
+
+            h4.heading.small{
+                font-size: 1.9rem;
+                font-family: $monts;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .contact__social{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        padding: 2.5rem;
+
+        li{
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+            a{
+                &:link,
+                &:visited{
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                i{
+                    color: $color-primary;
+                    margin-right: 1rem;
+                    font-size: 2.2rem;
+                    line-height: 2.2;
+                    display: inline-block;
+                    
+                }
+
+                &.for-icon{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background: $color-primary;
+                    line-height: 3rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    i{
+                        color: #fff;
+                        margin: 0 auto;
+                        font-size: 2rem;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // ================================================
+    // form styling ===================================
+
+    .form{
+        input,textarea{
+            display: inline-block;
+            width: 100%;
+            padding: 10px 20px;
+            border: none;
+            border:1px solid #c4c4c4;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        textarea{
+            height: 20rem;
+            
+            @media only screen and (max-width:$mbl-land){
+                margin-top: 30px;
+            }
+        }
+
+
+
+        &__item{
+            position: relative;
+            margin-bottom: 30px;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+/*--------------------------------------select input common style---------------------------------------*/
+.input_select span.current {
+    // color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+}
+.input_select.nice-select::after {
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    border-right: 1.5px solid rgb(255, 255, 255);
+    height: 7px;
+    width: 7px;
+    right: 20px;
+}
+.input_select.nice-select::before{
+    content: '';
+    height: 100%;
+    width: 45px;
+    background: $color-primary;
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.input_select.nice-select {
+    border: none;
+    background: #f6f6f6;
+    border-radius: 0;
+    height: 47px;
+    line-height: 45px;
+    padding-left: 28px;
+    padding-right: 50px;
+}
+.input_select .list {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 5px;
+}
+.input_select .option {
+    line-height: 45px;
+    min-height: 45px;
+    font-size: 15px;
+}
+.input_select .option:hover,
+.input_select .option.focus,
+.input_select .option.selected.focus {
+    background-color: #e6e6e6;
+}
+
+
+
+/*---------------select style-3----------------*/
+.input_select3.nice-select {
+    background: #fff;
+    border: 1px solid #c4c4c4;
+  }
+  .input_select3 .list {
+    background: #fff;
+    border: 1px solid #c4c4c4;
+  }
+  .input_select3 .option:hover,
+  .input_select3 .option.focus,
+  .input_select3 .option.selected.focus {
+      background-color: #f6f6f6;
+  }
+  
+  
+
+
+
+
+
+
+
+
+

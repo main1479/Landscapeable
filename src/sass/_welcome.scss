@@ -1,0 +1,26 @@
+.welcome{
+    position: relative;
+    background:transparent;
+    background: url(../img/shape-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -15rem;
+    z-index: 2;
+
+    @media only screen and (max-width: $laptop-land){
+       background: #fff;
+       margin-top: 0;
+    }
+    @media only screen and (max-width: $tab-land){
+       text-align: center;
+    }
+
+    .img-fluid{
+
+      @media only screen and (max-width: $tab-land){
+         max-width: 200px;
+         margin-bottom: 3rem;
+      }
+
+    }
+}

@@ -1,0 +1,124 @@
+ .projects-hero{
+    background: url(../img/projects-header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    padding-bottom: 27rem;
+    padding-top: 15rem;
+
+    .p__text{
+        line-height: 1.4;
+    }
+ }
+
+
+ .page-projects{
+
+    & .container{
+        max-width: 1170px;
+    }
+
+    padding-bottom: 5rem;
+
+    .project__card{
+        // height: 41rem;
+        position: relative;
+        transition: all .3s;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &-img{
+            height: 100%;
+            width: 100%;
+            img{
+                width: 100%;
+                // object-fit: cover;
+            }
+
+        }
+
+        &-details{
+            transition: all .3s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .7));
+            transform: translateY(100%);
+
+
+            .p__text{
+                margin-bottom: 2rem !important;
+            }
+        }
+
+        &:hover{
+
+            .project__card-details{
+                transform: translateY(0);
+            }
+        }
+    }
+
+
+    // ======================================
+    // pagination area ======================
+
+
+    /*-------common style for pagination section --------*/
+    .pagination_common {
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .pagination_common > li {
+    display: inline-block;
+    }
+    .pagination_common > li a{
+        text-align: center;
+    }
+
+
+
+    /*----------pagination-6-------------*/
+.pagination6 li a {
+    background: #e6ebe5;
+    color: $color-heading;
+    display: block;
+    font-size: 2.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 10px;
+    border-radius: 100%;
+    width: 4.5rem;
+}
+.pagination6 li:last-child a:hover,
+.pagination6 li:first-child a:hover,
+.pagination6 li.active a,
+.pagination6 li a:hover {
+    background:$color-primary;
+    // color: #fff;
+}
+
+// .pagination6 li:first-child a ,
+.pagination6 li:last-child a
+{
+    font-size: 2rem;
+    color: $color-heading;
+    background: #e6e6e6;
+
+}
+.pagination6 > li {
+    float: left;
+    margin: 0 5px;
+}
+
+
+ }

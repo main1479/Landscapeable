@@ -1,0 +1,76 @@
+.project{
+
+
+
+
+    .project__card{
+        height: 41rem;
+        position: relative;
+        transition: all .3s;
+        overflow: hidden;
+
+        &-img{
+            height: 100%;
+
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        &-details{
+            transition: all .3s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .7));
+            transform: translateY(100%);
+        }
+
+        &:hover{
+
+            .project__card-details{
+                transform: translateY(0);
+            }
+        }
+    }
+
+
+    .owl-carousel .owl-nav{
+        display: none;
+    }
+
+    .owl-carousel .owl-dots {
+        margin-top: 3.5rem;
+      }
+
+      .owl-carousel .owl-dots .owl-dot,
+      .owl-carousel .owl-nav [class*="owl-"]:focus {
+        outline: none;
+      }
+      
+      .owl-carousel .owl-dots .owl-dot span {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: #b3b3b3;
+      transition: all 0.2s ease;
+      display: inline-block;
+      margin: 1rem;
+    }
+    
+    .owl-carousel .owl-dots .owl-dot:hover span,
+    .owl-carousel .owl-dots .owl-dot.active span {
+      background: $color-primary;
+      border: 3px solid #fff;
+      // outline: 1px solid #fff;
+      // outline-offset: 2px;
+      box-shadow: 0 0 0 2px $color-primary;
+    }
+}

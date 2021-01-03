@@ -1,0 +1,165 @@
+.heading{
+    color: $color-text;
+    font-family: $impact;
+
+    &.m{
+        font-family: $bebas;
+    }
+}
+
+h1.heading{
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media only screen and (max-width: $tab-port){
+        font-size: 3.5rem;
+        br{
+            display: none;
+        }
+    }
+}
+
+h2.heading{
+      font-family: $impact;
+      font-size: 5.5rem;
+      color: $color-heading;
+     
+
+    @media only screen and (max-width: $laptop-port){
+        font-size: 4.5rem;
+        br{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: $tab-port){
+        font-size: 4rem;
+        br{
+            display: none;
+        }
+    }
+    // @media only screen and (max-width: $mbl-port){
+    //     font-size: 3.5rem;
+    // }
+
+    &.big{ 
+        font-size: 7.5rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 5.5rem;
+            br{
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: $mbl-port){
+            font-size: 5rem;
+        }
+    }
+
+    &.mid{
+        font-size: 6.1rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 5rem;
+            br{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: $mbl-port){
+            font-size: 4rem;
+        }
+    }
+    &.medium{
+        font-size: 4.6rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 3.5rem;
+            br{
+                display: none;
+            }
+        }
+    }
+
+    &.small{
+        font-size: 4rem;
+        @media only screen and (max-width: $laptop-port){
+            font-size: 3.3rem;
+            br{
+                display: none;
+            }
+        }
+    }
+}
+
+h3.heading{
+    font-family: $roboto; 
+
+    font-size: 3rem;
+    color: $color-primary;
+    
+
+    @media only screen and (max-width: $tab-port){
+        font-size: 2.7rem;
+        br{
+            display: none;
+        }
+    }
+
+    &.white{
+        color: #fff;
+    }
+
+}
+
+h4.heading{
+    font-size: 3rem;
+    font-family: $bebas;
+}
+
+.underlined{
+    position: relative;
+    // display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid $color-primary !important;
+
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 3px;
+    //     background: linear-gradient($btn1, $btn2);
+    //     bottom: 8%;
+    //     left: 0;
+    //     display: none;
+    // }
+
+    
+}
+
+
+.p__text{
+    font-family: $roboto;
+    font-size: 2.2rem;
+    hyphens: manual;
+    font-weight: 300;
+
+    @media only screen and (max-width: $mbl-land){
+        font-size: 1.8rem;
+    }
+
+    & .heading  {
+        font-family: $roboto;
+    }
+
+    &.sm{
+        font-size: 1.5rem;
+    }
+
+}
+.white{
+    color: #fff;
+}
+.primary{
+    color: $color-primary;
+}
+
+.ttc{text-transform: capitalize;}
+.ttu{text-transform: uppercase;}
